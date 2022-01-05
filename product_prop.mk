@@ -16,7 +16,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=opengl \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1 \
-    debug.sf.disable_hwc_overlays=1 \
     debug.sdm.support_writeback=0 \
     debug.enable.sglscale=1 \
     debug.mdpcomp.logs=0 \
@@ -32,10 +31,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=15 \
     vendor.audio.offload.buffer.size.kb=256
-
-# Always use GPU for screen compositing
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.disable_hwc_overlays=1
 
 # Power-saving props
 PRODUCT_PROPERTY_OVERRIDES += \
