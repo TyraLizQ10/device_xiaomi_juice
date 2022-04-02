@@ -19,6 +19,7 @@ debug.sdm.support_writeback=0
 debug.enable.sglscale=1
 debug.mdpcomp.logs=0
 debug.sf.recomputecrop=0
+debug.cpurend.vsync=false
 vendor.display.disable_rotator_downscale=1
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_context_priority=true
