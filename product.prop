@@ -58,3 +58,11 @@ ro.com.google.ime.kb_pad_port_l=8.0
 ro.com.google.ime.kb_pad_port_b=1
 ro.com.google.ime.kb_pad_land_r=24.0
 ro.com.google.ime.kb_pad_land_l=24.0
+
+# PixelBlaster
+ro.pb.maintainer=Nathaniel_Quitua
+ro.pb.soc=placeholdercuzitsininit
+ro.pb.camera=48MP
+ro.pb.version=5.1
+ro.pb.codename=juice
+ro.pb.device=placeholdercuzitsininit

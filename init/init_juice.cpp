@@ -88,26 +88,38 @@ void vendor_load_properties() {
             set_device_props(
                     "Redmi", "lime", "M2010J19SG", "lime_global", "Redmi 9T");
 		     property_override("ro.product.mod_device", "lime_global");
+		     property_override("ro.pb.device", "Redmi 9T");
+  			property_override("ro.pb.soc", "Snapdragon 662");
         } else if (region == "India") {
             set_device_props(
                     "Redmi", "lime", "M2010J19SI", "lime", "Redmi 9 Power");
                     property_override("ro.product.mod_device", "lime");
+                    roperty_override("ro.pb.device", "Redmi 9T Power");
+  				property_override("ro.pb.soc", "Snapdragon 662");
         } else if (region == "CN") {
             set_device_props(
                     "Redmi", "lime", "M2010J19SC", "lime", "Redmi Note 9 4G");
                     property_override("ro.product.mod_device", "lime");
+                    property_override("ro.pb.device", "Redmi 9T Note 9 4G");
+  				property_override("ro.pb.soc", "Snapdragon 662");
         }
     } else if (hwname == "lemon") {
         set_device_props(
                 "Redmi", "lemon", "M2010J19SY", "lemon_global", "Redmi 9T NFC");
                 property_override("ro.product.mod_device", "lemon_global");
+                property_override("ro.pb.device", "Redmi 9T NFC");
+  			 property_override("ro.pb.soc", "Snapdragon 662");
     } else if (hwname == "citrus") {
         set_device_props(
                 "POCO", "citrus", "M2010J19CG", "citrus_global", "POCO M3");
                 property_override("ro.product.mod_device", "citrus_global");
+                property_override("ro.pb.device", "POCO M3");
+  			 property_override("ro.pb.soc", "Snapdragon 662");
     } else if (hwname == "pomelo") {
         set_device_props(
                 "Redmi", "pomelo", "M2010J19SL", "pomelo", "Redmi 9T");
                 property_override("ro.product.mod_device", "pomelo");
+                property_override("ro.pb.device", "Redmi 9T");
+  			 property_override("ro.pb.soc", "Snapdragon 662");
     }
 }
