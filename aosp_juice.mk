@@ -22,6 +22,14 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Juice
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+# Fingerprint
+BUILD_FINGERPRINT := google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys
+BUILD_DESC := "raven-user 12 SP2A.220405.004 8233519 release-keys"
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys"
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
+	
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
